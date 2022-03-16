@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Password Generator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+
+      <h1>Password Generator</h1>
+      <!-- CHECK BOXES FOR WHAT OUR PASSWORD WILL CONTAIN -->
+      
+      <div class="check-form">
+        <input type="checkbox" name="numbers" id="numbers" class="checkbox">
+        <label for="numbers" class="toggle"><span class="toggle-label">Include Numbers</span></label>
+      </div>
+      
+      <div class="check-form">
+        <input type="checkbox" name="uppercase" id="uppercase" class="checkbox">
+        <label for="uppercase" class="toggle"><span class="toggle-label">Include Uppercase</span></label>
+      </div>
+      
+      <div class="check-form">
+        <input type="checkbox" name="lowercase" id="lowercase" class="checkbox">
+        <label for="lowercase" class="toggle"><span class="toggle-label">Include Lowercase</span></label>
+      </div>
+      
+      <div class="check-form">
+        <input type="checkbox" name="symbols" id="symbols" class="checkbox">
+        <label for="symbols" class="toggle"><span class="toggle-label">Include Symbols</span></label>
+      </div>
+      
+      <!-- The Generated Password Will Be Shown Here -->
+      <div class="password">
+        <input type="text" name="" id="password" placeholder="Create password" readonly>
+      </div>
+      
+      <!-- The Generate and Copy buttons -->
+      
+      <button id="button" class="btn-generate">Generate</button>
+      <button id="button" class="btn-copy">Copy Password</button>
+    </div>
+  </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
